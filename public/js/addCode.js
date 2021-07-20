@@ -5,7 +5,7 @@ export const addBlog = async (name, email, title, description, content) => {
   try {
     const res = await axios({
       method: 'POST',
-      url: 'http://localhost:8000/api/v1/blog',
+      url: '/api/v1/blog',
       data: {
         name,
         email,
