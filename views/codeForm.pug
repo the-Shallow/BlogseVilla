@@ -1,0 +1,66 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Form
+  link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC' crossorigin='anonymous')
+  link(rel='stylesheet' href='css/style.css')
+header
+  nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
+    .container-fluid
+      a.navbar-brand(href='#') BlogseVilla
+      button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      #navbarSupportedContent.collapse.navbar-collapse
+        ul.navbar-nav.me-auto.mb-2.mb-lg-0
+          li.nav-item
+            a.nav-link.active(aria-current='page' href='/') Home
+          li.nav-item
+            a.nav-link(href='#') Browse Blogs
+          li.nav-item.dropdown
+            a#navbarDropdown.nav-link.dropdown-toggle(href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false')
+              | Dropdown
+            ul.dropdown-menu(aria-labelledby='navbarDropdown')
+              li
+                a.dropdown-item(href='#') Action
+              li
+                a.dropdown-item(href='#') Another action
+              li
+                hr.dropdown-divider
+              li
+                a.dropdown-item(href='#') Something else here
+          li.nav-item
+            a.nav-link.disabled(href='#' tabindex='-1' aria-disabled='true') Disabled
+        form.d-flex
+          input.form-control.me-2(type='search' placeholder='Search' aria-label='Search')
+          button.btn.btn-outline-success(type='submit') Search
+main
+  .code-form
+    form.form-add-blog
+      .mb-3
+        label.form-label(for='name') Name
+        input#name.form-control(type='name' placeholder='Khush Patel')
+      .mb-3
+        label.form-label(for='email') Email address
+        input#email.form-control(type='email' placeholder='name@example.com')
+      .mb-3
+        label.form-label(for='title') Title
+        input#title.form-control(type='text' placeholder='Machine Learning')
+      .mb-3
+        label.form-label(for='description') Description
+        input#description.form-control(type='text' placeholder='Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo perspiciatis pariatur, quo aspernatur dicta mollitia voluptatum rem dolorum, aliquam ducimus perferendis aliquid voluptatem hic eius accusamus numquam doloremque a? Doloremque?')
+      .mb-3
+        label.form-label(for='content') Enter Your code
+        textarea#content.form-control(rows='3')
+      .input-group.mb-3
+        input#image.form-control(type='file')
+        label.input-group-text(for='image') Upload Profile photo
+      button.btn.btn-primary(type='submit') Submit
+footer
+  nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
+    .container-fluid
+      a.navbar-brand(href='#') Navbar
+      a.navbar-brand(href='#') BlogseVilla
+script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js' integrity='sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM' crossorigin='anonymous')
+script(src="/js/bundle.js") 

@@ -1,0 +1,46 @@
+[
+    {
+        "name":"Khush Patel",
+        "email":"khush2792001@gmail.com",
+        "title":"Machine Learning",
+        "description":"Learning about Machine Learning",
+        "photo":"user-1.jpeg",
+        "content":"loremloremloremloremloremloremloremloremloremloremloremloremloremloremloremlorem"
+    },
+    {
+        "name":"Raj Solanki",
+        "email":"raj@gmail.com",
+        "title":"App Learning",
+        "description":"Learning about App Learning",
+        "photo":"user-2.jpeg",
+        "content":"loremloremloremloremloremloremloremloremloremloremloremloremloremloremloremlorem"
+    },{
+        "name":"Dhruv Vyas",
+        "email":"dhruv@gmail.com",
+        "title":"Hotel Management",
+        "description":"Learning about Hotel Management",
+        "photo":"user-3.jpeg",
+        "content":"loremloremloremloremloremloremloremloremloremloremloremloremloremloremloremlorem"
+    },{
+        "name":"Hrishi Patel",
+        "email":"hrishi@gmail.com",
+        "title":"Automobile Learning",
+        "description":"Learning about Automobile Learning",
+        "photo":"user-4.jpeg",
+        "content":"loremloremloremloremloremloremloremloremloremloremloremloremloremloremloremlorem"
+    },{
+        "name":"Jay Patel",
+        "email":"jay@gmail.com",
+        "title":"microprocessor Learning",
+        "description":"Learning about microprocessor Learning",
+        "photo":"user-5.jpeg",
+        "content":"loremloremloremloremloremloremloremloremloremloremloremloremloremloremloremlorem"
+    },{
+        "name":"poojan dabhi",
+        "email":"poojan@gmail.com",
+        "title":"Game development",
+        "description":"Learning about Game development",
+        "photo":"user-6.jpeg",
+        "content":"loremloremloremloremloremloremloremloremloremloremloremloremloremloremloremlorem"
+    }
+]
