@@ -78,7 +78,7 @@ exports.logout = (req, res, next) => {
 
 exports.protect = async (req, res, next) => {
   let token;
-  console.log(req.cookies);
+  
   if (
     req.headers.authorization &&
     req.headers.authorization.startsWith('Bearer')
@@ -97,7 +97,6 @@ exports.protect = async (req, res, next) => {
     process.env.JWT_SECRET
   );
 
-  console.log(decoded);
   const user = await User.findById(decoded.id);
 
   if (!user) {
@@ -113,6 +112,47 @@ exports.protect = async (req, res, next) => {
 
   next();
 };
+
+exports.isLoggedIn = async (req, res, next) => {
+  try {
+    let token;
+  
+  if (
+    req.headers.authorization &&
+    req.headers.authorization.startsWith('Bearer')
+  ) {
+    token = req.headers.authorization.split(' ')[1];
+  } else if (req.cookies.jwt) {
+    token = req.cookies.jwt;
+  }
+
+  if (!token) {
+    return next();
+  }
+
+  const decoded = await util.promisify(jwt.verify)(
+    token,
+    process.env.JWT_SECRET
+  );
+
+  const user = await User.findById(decoded.id);
+
+  if (!user) {
+    return next();
+  }
+
+  if (user.changedpasswordAfter(user.passwordChangedAt, decoded.iat)) {
+    return next();
+  }
+
+  req.user = user;
+  res.locals.user = user;
+
+  next();
+  } catch (err) {
+    next();
+  }
+}
 
 exports.restrictTo = (role) => {
   return (req, res, next) => {

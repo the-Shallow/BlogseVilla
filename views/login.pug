@@ -18,7 +18,7 @@ block style
         }
         .card{
         border: 0.40rem solid #f8f9fa;
-        top: 10%;
+        top: 20%;
         }
         .form-control{
         background-color: #f8f9fa;
@@ -49,25 +49,21 @@ block style
 
 block header
 
-block content
+
+block content 
     .container
         .row.justify-content-center
             .col-md-5
                 .card
                     h2.card-title.text-center
-                        | Register 
+                        | Log in to your account 
                     .card-body.py-md-4
-                        form.form--signup
-                            .form-group
-                                input#name.form-control(type='text' placeholder='Name')
+                        form.form--login
                             .form-group
                                 input#email.form-control(type='email' placeholder='Email')
                             .form-group
                                 input#password.form-control(type='password' placeholder='Password')
-                            .form-group
-                                input#passwordConfirm.form-control(type='password' placeholder='confirm-password')
                             .d-flex.flex-row.align-items-center.justify-content-between
-                                a(href='/login') Login
-                                button.btn.btn-primary(type='submit') Create Account
+                                button.btn.btn-primary(type='submit') Login
 
 block footer 

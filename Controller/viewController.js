@@ -29,3 +29,19 @@ exports.getsignupForm = (req, res, next) => {
     title: 'Sign Up',
   });
 };
+
+exports.getLoginForm = (req, res, next) => {
+  res.status(200).render('login', {
+    title: 'Login',
+  });
+};
+
+exports.getAllBlogs = async (req, res, next) => {
+
+  const blogs = await Blog.find();
+
+  res.status(200).render('allBlogs', {
+    title: 'All Blogs',
+    blogs
+  });
+};

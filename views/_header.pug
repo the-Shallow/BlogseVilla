@@ -1,0 +1,21 @@
+header
+    nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
+        .container-fluid
+            a.navbar-brand(href='#') BlogseVilla
+            button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+                span.navbar-toggler-icon
+            #navbarSupportedContent.collapse.navbar-collapse
+                ul.navbar-nav.me-auto.mb-2.mb-lg-0
+                    li.nav-item
+                        a.nav-link.active(aria-current='page' href='/') Home
+                    if user 
+                        li.nav-item
+                            a.nav-link(aria-current='page' href='/code-form') Add Blog    
+                    li.nav-item
+                        a.nav-link(href='/blogs') Browse Blogs
+                .d-flex
+                    if user 
+                        a.bg-danger.text-white.btn-logout Log Out
+                    else 
+                        a.bg-primary.text-white(href='/login') Login to create your own blog
+                        a.bg-danger.text-white(href='/signup') Sign Up
