@@ -23,3 +23,9 @@ exports.codeForm = (req, res, next) => {
     title: 'Add your Blog',
   });
 };
+
+exports.getsignupForm = (req, res, next) => {
+  res.status(200).render('signup', {
+    title: 'Sign Up',
+  });
+};

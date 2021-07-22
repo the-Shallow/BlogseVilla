@@ -38,9 +38,10 @@ html(lang="en")
                                         a.dropdown-item(href='#') Something else here
                             li.nav-item
                                 a.nav-link.disabled(href='#' tabindex='-1' aria-disabled='true') Disabled
-                        form.d-flex
-                            input.form-control.me-2(type='search' placeholder='Search' aria-label='Search')
-                            button.btn.btn-outline-success(type='submit') Search
+                        .d-flex
+                            a.bg-primary.text-white(href='#') Login
+                            a.bg-danger.text-white(href='/signup') Sign Up
+
             
         main
             .blog-card

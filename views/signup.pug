@@ -1,0 +1,75 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Sign Up
+  link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC' crossorigin='anonymous')
+  style.
+    body{
+    background: #fff;
+    font-family: 'PT Sans', sans-serif;
+    }
+    h2{
+    padding-top: 1.5rem;
+    }
+    a{
+    color: #333;
+    }
+    a:hover{
+    color: #da5767;
+    text-decoration: none;
+    }
+    .card{
+    border: 0.40rem solid #f8f9fa;
+    top: 20%;
+    }
+    .form-control{
+    background-color: #f8f9fa;
+    padding: 15px;
+    padding: 15px 15px;
+    margin-bottom: 1.3rem;
+    }
+    .form-control:focus {
+    color: #000000;
+    background-color: #ffffff;
+    border: 3px solid #da5767;
+    outline: 0;
+    box-shadow: none;
+    }
+    .btn{
+    padding: 0.6rem 1.2rem;
+    background: #da5767;
+    border: 2px solid #da5767;
+    }
+    .btn-primary:hover {
+    background-color: #df8c96;
+    border-color: #df8c96;
+    transition: .3s;
+    }
+    a{
+        text-decoration:none;
+    }
+
+.container
+  .row.justify-content-center
+    .col-md-5
+      .card
+        h2.card-title.text-center
+          | Register 
+        .card-body.py-md-4
+          form.form--signup
+            .form-group
+              input#name.form-control(type='text' placeholder='Name')
+            .form-group
+              input#email.form-control(type='email' placeholder='Email')
+            .form-group
+              input#password.form-control(type='password' placeholder='Password')
+            .form-group
+              input#passwordConfirm.form-control(type='password' placeholder='confirm-password')
+            .d-flex.flex-row.align-items-center.justify-content-between
+              a(href='#') Login
+              button.btn.btn-primary(type='submit') Create Account
+
+script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js' integrity='sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM' crossorigin='anonymous')
+script(src='/js/bundle.js')
