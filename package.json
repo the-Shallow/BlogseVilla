@@ -14,6 +14,12 @@
   "license": "ISC",
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
+    "@editorjs/editorjs": "^2.22.2",
+    "@editorjs/embed": "^2.4.6",
+    "@editorjs/header": "^2.6.1",
+    "@editorjs/image": "^2.6.0",
+    "@editorjs/list": "^1.6.2",
+    "@editorjs/simple-image": "^1.4.1",
     "axios": "^0.21.1",
     "bcryptjs": "^2.4.3",
     "cookie-parser": "^1.4.5",

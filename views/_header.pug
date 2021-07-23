@@ -15,6 +15,7 @@ header
                         a.nav-link(href='/blogs') Browse Blogs
                 .d-flex
                     if user 
+                        a.bg-primary.text-white(href='/account') Account
                         a.bg-danger.text-white.btn-logout Log Out
                     else 
                         a.bg-primary.text-white(href='/login') Login to create your own blog

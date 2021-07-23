@@ -30,9 +30,8 @@ const blogData = mongoose.Schema({
         type: String
     },
     content: {
-        type: String,
+        type: [String],
         required: [true, "A Blog must have the content"],
-        trim: true
     },
     createdAt: {
         type: Date,
