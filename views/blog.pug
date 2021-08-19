@@ -2,26 +2,29 @@ extends base
 
 block content 
   main
-    .container
-      .blog
-        .image
-          img(src='/img/josh-hild-_TFu0wxWNWE-unsplash.jpg' alt='')
-        .content
-          .title
-            h1=blog.title
-            each data in blog.content
-              - var delimiter = data.indexOf('-');
-              - var type = data.slice(0,delimiter)
-              - var val = data.slice(delimiter+1) 
-              case  type
-                when 'paragraph'
-                  p=val 
-                when 'image'
-                  img(src=`${val}`, alt="")
-                when 'header'
-                  h2=val
-        .end
-          blockquote=`-${blog.name}`
+      .container
+        .blog
+          .content
+            .title
+              h1=blog.title
+            .main-content
+              each data in blog.content
+               - var delimiter = data.indexOf('-');
+               - var type = data.slice(0,delimiter)
+               - var val = data.slice(delimiter+1) 
+               case  type
+                 when 'paragraph'
+                   .content--el
+                     p=val
+                 when 'image'
+                   .content--el
+                     img(src=`${val}`, alt="")
+                 when 'header'
+                   .content--el
+                     h2=val
+          .end
+            blockquote=`-${blog.name}`
+
 
 //- include _footer
 

@@ -9,10 +9,53 @@
 
     <link rel="stylesheet" href="css/prism.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <link rel="stylesheet" href="css/style.css">
+
+    <style>
+
+        .container {
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .title {
+            text-align: center;
+        }
+
+        .content {
+            /* border: 1px solid pink; */
+            margin: 0 auto;
+        }
+
+        .content--el img {
+            max-width:500px;
+            display: block;
+            /* border: 1px solid green; */
+            max-height: 500px;
+            margin: 0 auto;
+        }
+
+        .content--el {
+            /* border: 1px solid black; */
+            width: 100%;
+            margin: 10px 0;
+            padding: 5px 5px;
+            line-height:1.50em;
+            font-size: 1.25em;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        p{
+            text-align: justify;
+        }
+    </style>
 </head>
 
 <body>
@@ -63,28 +106,50 @@
     <main>
         <div class="container">
             <div class="blog">
-                <div class="image">
+                <!-- <div class="image">
                     <img src="img/josh-hild-_TFu0wxWNWE-unsplash.jpg" alt="">
-                </div>
+                </div> -->
 
                 <div class="content">
                     <div class="title">
                         <h1>Machine Learning</h1>
                     </div>
 
-                    <div class="content-info lead">
-                        Resurging interest in machine learning is due to the same factors that have made data mining and
-                        Bayesian analysis more
-                        popular than ever. Things like growing volumes and varieties of available data, computational
-                        processing that is cheaper
-                        and more powerful, and affordable data storage.
+                    <div class="main-content">
+                        <div class="content--el">
+                            <h2>Course Resources</h2>
+                        </div>
 
-                        All of these things mean it's possible to quickly and automatically produce models that can
-                        analyze bigger, more complex
-                        data and deliver faster, more accurate results – even on a very large scale. And by building
-                        precise models, an
-                        organization has a better chance of identifying profitable opportunities – or avoiding unknown
-                        risks.
+                        <div class="content--el">
+                            <p>Whenever I am seeking to upskill my Machine Learning skills, Coursera is typically the first place I look for courses.
+                            It helps all the more that the Founder of Coursera is none other than Andrew Ng, the creator of possibly the most famous
+                            Machine Learning MOOC that exists.</p>
+                        </div>
+
+                        <div class="content--el"><h2>Udemy</h2></div>
+
+                        <div class="content--el">
+                        <p>Udemy has also proven itself to be a great way to learn machine learning. Many of the courses I was taking regarding
+                        Machine Learning, always left out the deployment phase of the ML lifecycle. I really wanted to learn this and at the
+                        time the only course I could find was on Udemy — many other courses have since flooded the market. There is plenty of
+                        noise on Udemy from my experience, and after becoming familiar with how Coursera quizzes and tests you, I felt that the
+                        Udemy courses are a lot more passive — this may be the case for only the courses I’ve taken.</p>
+                        </div>
+                        
+                        <div class="content--el"><h2>Udacity</h2></div>
+                        
+                        <div class="content--el">
+                            <img src="https://miro.medium.com/max/1400/0*DYIleZKdhOx5Tl-0" alt="">
+                        </div>
+                        
+                        <div class="content--el">
+                        <p>I’ve only ever taken one Machine Learning course on Udacity, it was a nanodegree. From discussing with other learners
+                        and my one experience, I feel it is fair to say that Udacties nanodegrees are extremely comprehensive and you can be
+                        sure to feel a lot more competent. An argument I’d make against this resource is that it’s expensive, I paid £329 a
+                        month for my course. However, the support team is willing to negotiate something more affordable and there are pretty
+                        much sales all the time.</p>
+                        </div>
+                        
                     </div>
                 </div>
 
